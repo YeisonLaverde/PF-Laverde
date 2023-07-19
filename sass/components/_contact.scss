@@ -1,0 +1,36 @@
+@import "../base/variables.scss";
+form {
+    display: flex;
+    flex-direction: column;
+  
+    div {
+      margin-bottom: 10px;
+    }
+  
+    label {
+      margin-bottom: 5px;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+      padding: 5px;
+      width: 100%;
+    }
+  
+    input[type="submit"],
+    input[type="reset"] {
+      @include button-style;
+      background-color: $color-green;
+  
+      &:hover {
+        background-color: $color-lightgreen;
+      }
+    }
+  
+    input[type="reset"] {
+      background-color: $color-red;
+    }
+  }
+  
