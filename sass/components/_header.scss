@@ -1,0 +1,76 @@
+@import "../base/variables.scss";
+// Estilos en Sass
+.container {
+    @include center;
+    background-color: $color-lightgray;
+    padding: 20px;
+  }
+  
+  .blanco2 {
+    text-align: center;
+    font-size: $font-size-2rem;
+    font-weight: $font-weight-600;
+    color: $color-black;
+  }
+  
+  .blanco {
+    text-align: center;
+    font-size: $font-size-3rem;
+    font-weight: $font-weight-900;
+    color: $color-black;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .negro {
+    color: $color-black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    div {
+      margin-bottom: 10px;
+    }
+  
+    label {
+      margin-bottom: 5px;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+      padding: 5px;
+      width: 100%;
+    }
+  
+    input[type="submit"],
+    input[type="reset"] {
+      @include button-style;
+      background-color: $color-green;
+  
+      &:hover {
+        background-color: $color-lightgreen;
+      }
+    }
+  
+    input[type="reset"] {
+      background-color: $color-red;
+    }
+  }
+  

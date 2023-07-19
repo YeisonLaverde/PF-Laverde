@@ -1,3 +1,109 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0);
+  padding: 20px;
+}
 
+.blanco2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.blanco {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.negro {
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form div {
+  margin-bottom: 10px;
+}
+form label {
+  margin-bottom: 5px;
+}
+form input[type=email],
+form input[type=password],
+form input[type=date],
+form select {
+  padding: 5px;
+  width: 100%;
+}
+form input[type=submit],
+form input[type=reset] {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #4caf50;
+}
+form input[type=submit]:hover,
+form input[type=reset]:hover {
+  background-color: #45a049;
+}
+form input[type=reset] {
+  background-color: #f44336;
+}
+
+footer {
+  background-color: #aeffe4;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-content p {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+footer .footer-content .footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+footer .footer-content .footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-content .footer-links li a {
+  text-decoration: none;
+  color: #666;
+}
+footer .footer-content .footer-links li a:hover {
+  color: #278f36;
+}
 
 /*# sourceMappingURL=style.css.map */
