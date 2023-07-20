@@ -11221,12 +11221,31 @@ textarea.form-control-lg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 20px;
   height: 80vh;
   width: 100vw;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .container2 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container2 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container2 {
+    font-size: 24px;
+  }
 }
 
 .blanco2 {

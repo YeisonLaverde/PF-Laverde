@@ -31,6 +31,12 @@ $font-weight-900: 900;
 $border-gradient: linear-gradient(to right, #007bff, #00bcd4);
 
 
+//variables para tamaños de pantalla 
+
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
 // Mixin
 @mixin center {
   align-items: center;
