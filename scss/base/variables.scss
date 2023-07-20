@@ -54,3 +54,23 @@ $border-gradient: linear-gradient(to right, #007bff, #00bcd4);
   font-family: $font-family;
 }
 
+@mixin responsive-text { 
+  @media screen and (max-width: 940px) {
+  font-size: $font-size-default * 0.8; // pantallas medianas
+  line-height: $line-height-default * 0.8; // pantallas medianas
+  img {
+    display: none;
+}
+}
+@media screen and (max-width: 768px) {
+  font-size: $font-size-default * 0.4; //pantallas pequeñas
+  line-height: $line-height-default * 0.7; //pantallas pequeñas
+  img {
+    display: none;
+}
+}
+@media screen and (max-width: 480px) {
+font-size: $font-size-default * 0.3; // antallas extra pequeñas
+line-height: $line-height-default * 0.6; //pantallas extra pequeñas
+}
+}

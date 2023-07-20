@@ -11216,6 +11216,19 @@ textarea.form-control-lg {
   padding: 20px;
 }
 
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 80vh;
+  width: 100vw;
+}
+
 .blanco2 {
   text-align: center;
   font-size: 2rem;
@@ -11248,6 +11261,12 @@ textarea.form-control-lg {
   }
   .textheight img {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .textheight {
+    font-size: 1.2rem;
+    line-height: 3.6rem;
   }
 }
 
@@ -11320,7 +11339,17 @@ textarea.form-control-lg {
   padding: 20px;
 }
 
+.videoedit {
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+}
+
 .item {
+  align-items: center;
+  height: 80vh;
+  width: 50vw;
   padding: 20px;
   background-color: #ffffff;
   border: 1px solid #000000;
@@ -11346,12 +11375,13 @@ textarea.form-control-lg {
   font-family: Arial, sans-serif;
   margin-bottom: 15px;
 }
-.item form {
+
+form {
   display: flex;
   flex-direction: column;
 }
-.item form input[type=submit],
-.item form input[type=reset] {
+form input[type=submit],
+form input[type=reset] {
   background-color: #000000;
   color: #ffffff;
   padding: 10px 15px;
@@ -11359,20 +11389,22 @@ textarea.form-control-lg {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.item form input[type=submit]:hover,
-.item form input[type=reset]:hover {
+form input[type=submit]:hover,
+form input[type=reset]:hover {
   background-color: black;
 }
-.item form input[type=submit]:active {
+form input[type=submit]:active {
   transform: scale(1.1);
 }
-.item label {
+
+label {
   color: #000000;
   font-size: 16px;
   font-family: Arial, sans-serif;
 }
-.item input,
-.item select {
+
+input,
+select {
   margin-bottom: 15px;
   padding: 5px;
 }
