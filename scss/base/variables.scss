@@ -7,6 +7,12 @@ $color-lightgreen: #45a049;
 $color-lightgray: #f2f2f200;
 $color-lightblue: #aeffe4;
 $color-white: #ffffff;
+$primary-color: #dc3545;
+$primary-subtle: #f8d7da;
+$primary-emphasis: #721c24;
+$font-size-default: 1rem;
+$line-height-default: 1.5;
+
 
 //font styles
 $font-family: Arial, sans-serif;
@@ -15,6 +21,8 @@ $font-size-p: 16px;
 
 $font-size-2rem: 2rem;
 $font-size-3rem: 3rem;
+$font-size-default: 4rem;
+$line-height-default: 6rem;
 $font-weight-600: 600;
 $font-weight-900: 900;
 
@@ -45,3 +53,4 @@ $border-gradient: linear-gradient(to right, #007bff, #00bcd4);
   font-size: $size;
   font-family: $font-family;
 }
+

@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .navbar-nav .nav-link:hover {
   color: rgb(149, 192, 255);
@@ -36,8 +37,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-danger: rgb(54, 228, 255);
-  --bs-danger-rgb: 54, 228, 255;
+  --bs-danger: rgb(255, 255, 255);
+  --bs-danger-rgb: 255, 255, 255;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -2951,35 +2952,35 @@ textarea.form-control-lg {
 
 .btn-danger {
   --bs-btn-color: #000;
-  --bs-btn-bg: rgb(54, 228, 255);
-  --bs-btn-border-color: rgb(54, 228, 255);
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(255, 255, 255);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #54e8ff;
-  --bs-btn-hover-border-color: #4ae7ff;
-  --bs-btn-focus-shadow-rgb: 46, 194, 217;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #5ee9ff;
-  --bs-btn-active-border-color: #4ae7ff;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: rgb(54, 228, 255);
-  --bs-btn-disabled-border-color: rgb(54, 228, 255);
+  --bs-btn-disabled-bg: rgb(255, 255, 255);
+  --bs-btn-disabled-border-color: rgb(255, 255, 255);
 }
 
 .btn-outline-danger {
-  --bs-btn-color: rgb(54, 228, 255);
-  --bs-btn-border-color: rgb(54, 228, 255);
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(255, 255, 255);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(54, 228, 255);
-  --bs-btn-hover-border-color: rgb(54, 228, 255);
-  --bs-btn-focus-shadow-rgb: 54, 228, 255;
+  --bs-btn-hover-bg: rgb(255, 255, 255);
+  --bs-btn-hover-border-color: rgb(255, 255, 255);
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(54, 228, 255);
-  --bs-btn-active-border-color: rgb(54, 228, 255);
+  --bs-btn-active-bg: rgb(255, 255, 255);
+  --bs-btn-active-border-color: rgb(255, 255, 255);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(54, 228, 255);
+  --bs-btn-disabled-color: rgb(255, 255, 255);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(54, 228, 255);
+  --bs-btn-disabled-border-color: rgb(255, 255, 255);
   --bs-gradient: none;
 }
 
@@ -6377,7 +6378,7 @@ textarea.form-control-lg {
 
 .text-bg-danger {
   color: #000 !important;
-  background-color: RGBA(54, 228, 255, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-danger {
@@ -6385,8 +6386,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-danger-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: RGBA(94, 233, 255, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(94, 233, 255, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -11220,6 +11221,69 @@ textarea.form-control-lg {
   font-size: 2rem;
   font-weight: 600;
   color: rgb(0, 0, 0);
+}
+
+.textheight {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: 80vh;
+}
+@media screen and (max-width: 940px) {
+  .textheight {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .textheight img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .textheight {
+    font-size: 1.6rem;
+    line-height: 4.2rem;
+  }
+  .textheight img {
+    display: none;
+  }
+}
+
+.imagesmall {
+  height: 120px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.imageabsolut {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  /* Responsive styles using media queries */
+}
+@media screen and (max-width: 768px) {
+  .imageabsolut {
+    overflow: hidden;
+    width: 80%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .imageabsolut {
+    overflow: hidden;
+    width: 100%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+  }
 }
 
 .blanco {

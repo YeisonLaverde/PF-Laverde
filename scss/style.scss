@@ -1,8 +1,8 @@
 $theme-colors: (
-    "danger":    rgb(54, 228, 255),
+    "danger":    rgb(255, 255, 255),
   ) ;
  .navbar-nav .nav-link
- {color: rgb(255, 255, 255);
+ {color: rgb(0, 0, 0);
     &:hover {
         color: rgb(149, 192, 255); // Cambia el color de texto a azul cuando el mouse está sobre el enlace
       } 
@@ -13,3 +13,4 @@ $theme-colors: (
  @import "./components/footer"; 
  @import "./components/body.scss";
  @import "./base/variables.scss";
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
