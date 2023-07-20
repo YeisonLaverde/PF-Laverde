@@ -12,43 +12,61 @@
     padding: 20px;
     background-color: $color-white;
     border: 1px solid $color-primary;
-  }
+    transition: transform 0.3s ease; //transición
   
-  h1 {
-    @include text-style($color-primary, $font-size-h1);
-    margin-bottom: 10px;
-  }
+    // borde gradient
+    border-image: $border-gradient 1;
+    border-image-slice: 1; // propiedad para especificar corte gradiente
   
-  p {
-    @include text-style($color-black, $font-size-p);
-    margin-bottom: 15px;
-  }
+    &:hover {
+      transform: translateY(-5px); // Efecto de elevación cursor sobre elemento
+    }
   
-  form {
-    display: flex;
-    flex-direction: column;
-  }
+    &:active {
+      transform: scale(0.95); // Efecto de reducción clic en el elemento
+    }
   
-  label {
-    @include text-style($color-black, $font-size-p);
-  }
+    h1 {
+      @include text-style($color-primary, $font-size-h1);
+      margin-bottom: 10px;
+    }
   
-  input,
-  select {
-    margin-bottom: 15px;
-    padding: 5px;
-  }
+    p {
+      @include text-style($color-black, $font-size-p);
+      margin-bottom: 15px;
+    }
   
-  input[type="submit"],
-  input[type="reset"] {
-    background-color: $color-primary;
-    color: $color-white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-  }
+    form {
+      display: flex;
+      flex-direction: column;
   
-  input[type="submit"]:hover,
-  input[type="reset"]:hover {
-    background-color: darken($color-primary, 10%);
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease; // Agregamos una transición suave para el botón
+      }
+  
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: darken($color-primary, 10%);
+      }
+  
+      input[type="submit"]:active {
+        transform: scale(1.1);
+      }
+    }
+  
+    label {
+      @include text-style($color-black, $font-size-p);
+    }
+  
+    input,
+    select {
+      margin-bottom: 15px;
+      padding: 5px;
+    }
   }

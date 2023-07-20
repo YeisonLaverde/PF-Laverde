@@ -1,5 +1,5 @@
 // Color
-$color-primary: #007bff;
+$color-primary: #000000;
 $color-black: #000000;
 $color-green: #4caf50;
 $color-red: #f44336;
@@ -17,6 +17,11 @@ $font-size-2rem: 2rem;
 $font-size-3rem: 3rem;
 $font-weight-600: 600;
 $font-weight-900: 900;
+
+
+// Gradiente para el borde
+$border-gradient: linear-gradient(to right, #007bff, #00bcd4);
+
 
 // Mixin
 @mixin center {

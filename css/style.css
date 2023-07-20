@@ -36,8 +36,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-danger: rgb(39, 39, 39);
-  --bs-danger-rgb: 39, 39, 39;
+  --bs-danger: rgb(54, 228, 255);
+  --bs-danger-rgb: 54, 228, 255;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -2950,36 +2950,36 @@ textarea.form-control-lg {
 }
 
 .btn-danger {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: rgb(39, 39, 39);
-  --bs-btn-border-color: rgb(39, 39, 39);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #212121;
-  --bs-btn-hover-border-color: #1f1f1f;
-  --bs-btn-focus-shadow-rgb: 71, 71, 71;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1f1f1f;
-  --bs-btn-active-border-color: #1d1d1d;
+  --bs-btn-color: #000;
+  --bs-btn-bg: rgb(54, 228, 255);
+  --bs-btn-border-color: rgb(54, 228, 255);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #54e8ff;
+  --bs-btn-hover-border-color: #4ae7ff;
+  --bs-btn-focus-shadow-rgb: 46, 194, 217;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #5ee9ff;
+  --bs-btn-active-border-color: #4ae7ff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgb(39, 39, 39);
-  --bs-btn-disabled-border-color: rgb(39, 39, 39);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: rgb(54, 228, 255);
+  --bs-btn-disabled-border-color: rgb(54, 228, 255);
 }
 
 .btn-outline-danger {
-  --bs-btn-color: rgb(39, 39, 39);
-  --bs-btn-border-color: rgb(39, 39, 39);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(39, 39, 39);
-  --bs-btn-hover-border-color: rgb(39, 39, 39);
-  --bs-btn-focus-shadow-rgb: 39, 39, 39;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(39, 39, 39);
-  --bs-btn-active-border-color: rgb(39, 39, 39);
+  --bs-btn-color: rgb(54, 228, 255);
+  --bs-btn-border-color: rgb(54, 228, 255);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(54, 228, 255);
+  --bs-btn-hover-border-color: rgb(54, 228, 255);
+  --bs-btn-focus-shadow-rgb: 54, 228, 255;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(54, 228, 255);
+  --bs-btn-active-border-color: rgb(54, 228, 255);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(39, 39, 39);
+  --bs-btn-disabled-color: rgb(54, 228, 255);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(39, 39, 39);
+  --bs-btn-disabled-border-color: rgb(54, 228, 255);
   --bs-gradient: none;
 }
 
@@ -6376,8 +6376,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-danger {
-  color: #fff !important;
-  background-color: RGBA(39, 39, 39, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(54, 228, 255, var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-danger {
@@ -6385,8 +6385,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-danger-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: RGBA(31, 31, 31, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(31, 31, 31, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(94, 233, 255, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(94, 233, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -11259,52 +11259,58 @@ textarea.form-control-lg {
 .item {
   padding: 20px;
   background-color: #ffffff;
-  border: 1px solid #007bff;
+  border: 1px solid #000000;
+  transition: transform 0.3s ease;
+  border-image: linear-gradient(to right, #007bff, #00bcd4) 1;
+  border-image-slice: 1;
 }
-
-h1, .h1 {
-  color: #007bff;
+.item:hover {
+  transform: translateY(-5px);
+}
+.item:active {
+  transform: scale(0.95);
+}
+.item h1, .item .h1 {
+  color: #000000;
   font-size: 24px;
   font-family: Arial, sans-serif;
   margin-bottom: 10px;
 }
-
-p {
+.item p {
   color: #000000;
   font-size: 16px;
   font-family: Arial, sans-serif;
   margin-bottom: 15px;
 }
-
-form {
+.item form {
   display: flex;
   flex-direction: column;
 }
-
-label {
-  color: #000000;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-}
-
-input,
-select {
-  margin-bottom: 15px;
-  padding: 5px;
-}
-
-input[type=submit],
-input[type=reset] {
-  background-color: #007bff;
+.item form input[type=submit],
+.item form input[type=reset] {
+  background-color: #000000;
   color: #ffffff;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-input[type=submit]:hover,
-input[type=reset]:hover {
-  background-color: #0062cc;
+.item form input[type=submit]:hover,
+.item form input[type=reset]:hover {
+  background-color: black;
+}
+.item form input[type=submit]:active {
+  transform: scale(1.1);
+}
+.item label {
+  color: #000000;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.item input,
+.item select {
+  margin-bottom: 15px;
+  padding: 5px;
 }
 
 footer {
