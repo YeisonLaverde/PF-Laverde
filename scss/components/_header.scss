@@ -1,110 +1,98 @@
 @import "../base/variables.scss";
-// Estilos en Sass
+@import "../base/mixins";
+
+// Estilos
 .container {
-    @include center;
-    background-color: $color-lightgray;
-    padding: 20px;
-  }
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    height: 80vh;
-    width: 100vw;
+  @include center;
+  background-color: $color-lightgray;
+  padding: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 80vh;
+  width: 100vw;
   
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  @include responsive-text;
+}
+
+.blanco2 {
+  text-align: center;
+  @include text-style($color-primary, $font-size-2rem);
+  font-weight: $font-weight-600;
+}
+
+.textheight {
+  text-align: center;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: 80vh;
+  @include responsive-text;
+}
+
+.imagesmall {
+  height: 120px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.imageabsolut {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
   
-    @media screen and (max-width: $small-screen) {
-      font-size: 14px;
-    }
-  
-    @media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
-      font-size: 18px;
-    }
-  
-    @media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
-      font-size: 20px;
-    }
-  
-    @media screen and (min-width: $large-screen) {
-      font-size: 24px;
-    }
-  }
-  .blanco2 {
-    text-align: center;
-    font-size: $font-size-2rem;
-    font-weight: $font-weight-600;
-    color: rgb(0, 0, 0);
-  }
-  .textheight {
-    text-align: center;
-    font-size: $font-size-default;
-    line-height: $line-height-default;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    width: auto;
-    height: 80vh;
-    
-    @include responsive-text;
-  }
-  .imagesmall{
-    height: 120px;
-    width: 200px;
+  /* Responsive styles using media queries */
+  @media screen and (max-width: 768px) {
     overflow: hidden;
-    border-radius: 30px;
+    width: 80%;
+    top: 40%;
+    transform: translate(-50%, -40%);
   }
 
-  .imageabsolut {
-    height:100vh;
-    width: 100vw;
+  @media screen and (max-width: 576px) {
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    
-    /* Responsive styles using media queries */
-    @media screen and (max-width: 768px) {
-      overflow: hidden;
-      width: 80%;
-      top: 40%;
-      transform: translate(-50%, -40%);
-    }
-  
-    @media screen and (max-width: 576px) {
-      overflow: hidden;
-      width: 100%;
-      top: 30%;
-      transform: translate(-50%, -30%);
-    }
+    width: 100%;
+    top: 30%;
+    transform: translate(-50%, -30%);
   }
-  
-  .blanco {
-    text-align: center;
-    font-size: $font-size-3rem;
-    font-weight: $font-weight-900;
-    color: rgb(0, 0, 0);
+}
+
+.blanco {
+  text-align: center;
+  @include text-style($color-primary, $font-size-3rem);
+  font-weight: $font-weight-900;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  .item {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .negro {
-    color: $color-black;
-  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.negro {
+  color: $color-black;
+}

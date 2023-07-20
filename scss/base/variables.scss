@@ -13,70 +13,23 @@ $primary-emphasis: #721c24;
 $font-size-default: 1rem;
 $line-height-default: 1.5;
 
+//variables para tamaños de pantalla
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
 
-//font styles
+
 $font-family: Arial, sans-serif;
 $font-size-h1: 24px;
 $font-size-p: 16px;
-
 $font-size-2rem: 2rem;
 $font-size-3rem: 3rem;
 $font-size-default: 4rem;
 $line-height-default: 6rem;
 $font-weight-600: 600;
 $font-weight-900: 900;
-
-
-// Gradiente para el borde
 $border-gradient: linear-gradient(to right, #007bff, #00bcd4);
-
-
-//variables para tamaños de pantalla 
-
 $small-screen: 768px;
 $medium-screen: 992px;
 $large-screen: 1200px;
 
-// Mixin
-@mixin center {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-// Mixin
-@mixin button-style {
-  padding: 10px 20px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-// Mixin
-@mixin text-style($color, $size) {
-  color: $color;
-  font-size: $size;
-  font-family: $font-family;
-}
-
-@mixin responsive-text { 
-  @media screen and (max-width: 940px) {
-  font-size: $font-size-default * 0.8; // pantallas medianas
-  line-height: $line-height-default * 0.8; // pantallas medianas
-  img {
-    display: none;
-}
-}
-@media screen and (max-width: 768px) {
-  font-size: $font-size-default * 0.4; //pantallas pequeñas
-  line-height: $line-height-default * 0.7; //pantallas pequeñas
-  img {
-    display: none;
-}
-}
-@media screen and (max-width: 480px) {
-font-size: $font-size-default * 0.3; // antallas extra pequeñas
-line-height: $line-height-default * 0.6; //pantallas extra pequeñas
-}
-}

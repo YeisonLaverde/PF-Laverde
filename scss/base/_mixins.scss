@@ -1,0 +1,118 @@
+@import "../base/variables.scss";
+
+// Mixins
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  @mixin button-style {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  @mixin text-style($color, $size) {
+    color: $color;
+    font-size: $size;
+    font-family: $font-family;
+  }
+  
+  @mixin responsive-text { 
+    @media screen and (max-width: 940px) {
+      font-size: $font-size-default * 0.8; // pantallas medianas
+      line-height: $line-height-default * 0.8; // pantallas medianas
+      img {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      font-size: $font-size-default * 0.4; // pantallas pequeñas
+      line-height: $line-height-default * 0.7; // pantallas pequeñas
+      img {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      font-size: $font-size-default * 0.3; // pantallas extra pequeñas
+      line-height: $line-height-default * 0.6; // pantallas extra pequeñas
+    }
+  }
+  
+  @mixin item-style {
+    align-items: center;
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    transition: transform 0.3s ease;
+    border-image: $border-gradient 1;
+    border-image-slice: 1;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    &:active {
+      transform: scale(0.95);
+    }
+  
+    h1 {
+      @include text-style($color-primary, $font-size-h1);
+      margin-bottom: 10px;
+    }
+  
+    p {
+      @include text-style($color-black, $font-size-p);
+      margin-bottom: 15px;
+    }
+  }
+  
+  // Mixin para estilos del grid
+  @mixin grid-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  // Mixin para estilos del formulario
+  @mixin form-style {
+    display: flex;
+    flex-direction: column;
+  
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  
+    input[type="submit"]:active {
+      transform: scale(1.1);
+    }
+  
+    label {
+      @include text-style($color-black, $font-size-p);
+    }
+  
+    input,
+    select {
+      margin-bottom: 15px;
+      padding: 5px;
+    }
+  }
