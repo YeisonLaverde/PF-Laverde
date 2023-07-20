@@ -1,0 +1,15 @@
+$theme-colors: (
+    "danger":    #1f1f1f,
+  ) ;
+ .navbar-nav .nav-link
+ {color: rgb(255, 255, 255);
+    &:hover {
+        color: rgb(149, 192, 255); // Cambia el color de texto a azul cuando el mouse está sobre el enlace
+      } 
+    }
+ @import "../node_modules/bootstrap/scss/bootstrap";
+ @import "./components/header";
+ @import "./components/main";
+ @import "./components/footer"; 
+ @import "./components/body.scss";
+ @import "./base/variables.scss";

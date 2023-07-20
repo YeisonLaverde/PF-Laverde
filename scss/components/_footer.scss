@@ -1,6 +1,6 @@
 @import "../base/variables.scss";
 footer {
-    background-color: $color-lightblue;
+    background-color: $color-black;
     padding: 20px;
     text-align: center;
   
@@ -11,7 +11,7 @@ footer {
   
       p {
         font-size: 14px;
-        color: #333333;
+        color: #ffffff;
         margin-bottom: 10px;
       }
   
@@ -26,10 +26,10 @@ footer {
   
           a {
             text-decoration: none;
-            color: #666;
+            color: #ffffff;
   
             &:hover {
-              color: #278f36;
+              color: #51feea;
             }
           }
         }

@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--Bootstrap-->
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{font-family: 'Poppins', sans-serif;}
+    </style>
 </head>
 <body>
 
     <!--bootstrap + Flexbox -->
     <header class="container-fluid">
         <section class="row h-100">
-            <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+            <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-danger border border-primary-subtle">
                 <a class="navbar-brand" href="#">
                   <img src="../assets/image/Logo.png" alt="logo" style="width: 80px; height: auto;">
                 </a>
@@ -48,27 +52,27 @@
     </header>
     
     <!--grid + Flexbox-->
-    <main>
+    <main class="main-contact">
         <div class="grid">
             <div class="item">
                 <h1 class="negro">formulario de contacto</h1>
                 <p class="negro">Embárcate en una inolvidable aventura en los majestuosos Andes colombianos, donde la naturaleza deslumbrante te espera. Nuestro formulario de contacto está diseñado para ayudarte a personalizar tu experiencia y aprovechar ofertas exclusivas. Descubre senderos cautivadores que te llevarán a lugares impresionantes, maravíllate con cascadas en cascada y déjate cautivar por vistas panorámicas que te dejarán sin aliento.</p>
                 <p class="negro">Sumérgete en los secretos mejor guardados de los Andes colombianos y déjate envolver por la magia de este destino único. Nuestro equipo está preparado para guiarte en cada paso del camino, asegurando que cada momento sea memorable. No dejes pasar la oportunidad de explorar este tesoro natural.</p>
                 <p class="negro">Llena nuestro formulario de contacto y da el primer paso hacia una aventura incomparable en los Andes colombianos. Estamos emocionados de ser parte de tu viaje y de ayudarte a crear recuerdos que perdurarán para siempre. ¡No esperes más y déjate cautivar por la belleza y la serenidad de los Andes colombianos!</p>
-            </div>  
+            </div> 
             <div class="item">
-                <form action="">
-                    <div>
-                        <label class="negro" for="email">email</label>
-                        <input type="email" required placeholder="email">
-                        <label class="negro" for="password" >password</label>
-                        <input type="password"required placeholder="password">
-                    </div>
-                    <div>
-                        <label class="negro" for="date">date</label>
-                        <input type="date" id="date">
-                        <label class="negro" for="country">pais</label>
-                        <select  name="pais" id="country">
+              <form id="contactForm" action="">
+                <div>
+                  <label class="negro" for="email">email</label>
+                  <input type="email" required placeholder="email">
+                  <label class="negro" for="password">password</label>
+                  <input type="password" required placeholder="password">
+                </div>
+                <div>
+                  <label class="negro" for="date">date</label>
+                  <input type="date" id="date">
+                  <label class="negro" for="country">pais</label>
+                  <select name="pais" id="country">
                             <option value="EE.UU">Estados Unidos</option>
                             <option value="R. U.">Reino Unido</option>
                             <option value="AUS">Australia</option>
@@ -82,15 +86,14 @@
                         </select>
                     </div>
                     <div>
-                        <form id="login" onsubmit="process(event)">
                           <p class="negro">Enter your phone number:</p>
                           <input id="phone" type="tel" name="phone" maxlength="10" minlength="10" />
                         </form>
                     </div>
                        
                     <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="resetear">
+                      <input type="submit" value="Enviar" id="submitBtn">
+                      <input type="reset" value="resetear">
                     </div>
                 </form>
             </div>

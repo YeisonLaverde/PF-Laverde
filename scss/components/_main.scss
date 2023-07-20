@@ -1,0 +1,54 @@
+@import "../base/variables.scss";
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .item {
+    padding: 20px;
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+  }
+  
+  h1 {
+    @include text-style($color-primary, $font-size-h1);
+    margin-bottom: 10px;
+  }
+  
+  p {
+    @include text-style($color-black, $font-size-p);
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    @include text-style($color-black, $font-size-p);
+  }
+  
+  input,
+  select {
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: darken($color-primary, 10%);
+  }
