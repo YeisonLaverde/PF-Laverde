@@ -75,6 +75,18 @@
               </div>
                 <!--contenido de mi pagina-->
             </section>
+            <div class="container mt-5">
+              <button class="btn btn-primary animate-button">Presiona Aquí</button>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              // JavaScript para agregar la clase de animación al botón cuando se hace clic
+              $(document).ready(function() {
+                  $(".animate-button").click(function() {
+                    $(".col-xxl-6").toggleClass("animated-slide");
+                  });
+              });
+          </script>
             <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 bg-success-subtle">
                 <div class="container">
                     <div class="row">

@@ -12,3 +12,54 @@
 form {
   @include form-style;
 }
+.col-xxl-6 {
+  /* Establecemos la altura de las secciones para que sean iguales */
+  height: 300px;
+  overflow: hidden; /* Ocultamos el contenido que exceda la altura */
+  transition: height 0.3s; /* Agregamos una transición de altura para crear el efecto slide */
+}
+
+.col-xxl-6.animated-slide {
+  /* Definimos la altura inicial del elemento antes de la animación */
+  height: auto;
+}
+
+.col-xxl-6 > .container > .row > .col-md-12 {
+  opacity: 0; /* Hacemos que el contenido esté inicialmente oculto */
+  transition: opacity 0.3s; /* Agregamos una transición de opacidad para que aparezca suavemente */
+}
+
+.col-xxl-6.animated-slide > .container > .row > .col-md-12 {
+  opacity: 1; /* Hacemos que el contenido aparezca cuando el elemento tiene la clase animated-slide */
+}
+
+// Animación del botón
+.animate-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+  
+  &.animated-button {
+    animation: pulseAnimation 1s infinite;
+  }
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
