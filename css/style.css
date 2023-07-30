@@ -11443,6 +11443,19 @@ form select {
   margin-bottom: 15px;
   padding: 5px;
 }
+form .blanco2 {
+  /* Establecemos la altura de las secciones para que sean iguales */
+  height: 300px;
+  overflow: hidden; /* Ocultamos el contenido que exceda la altura */
+  transition: height 0.3s; /* Agregamos una transición de altura para crear el efecto slide */
+}
+form .blanco2 {
+  /* Definimos la altura inicial del elemento antes de la animación */
+  height: auto;
+}
+form .blanco2 {
+  opacity: 1; /* Hacemos que el contenido aparezca cuando el elemento tiene la clase animated-slide */
+}
 
 .col-xxl-6 {
   /* Establecemos la altura de las secciones para que sean iguales */

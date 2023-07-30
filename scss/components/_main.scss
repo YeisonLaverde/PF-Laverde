@@ -15,6 +15,29 @@ ul {
 
 form {
   @include form-style;
+
+  .blanco2{
+    /* Establecemos la altura de las secciones para que sean iguales */
+    height: 300px;
+    overflow: hidden; /* Ocultamos el contenido que exceda la altura */
+    transition: height 0.3s; /* Agregamos una transición de altura para crear el efecto slide */
+  }
+  
+  .blanco2 {
+    /* Definimos la altura inicial del elemento antes de la animación */
+    height: auto;
+  }
+  
+  .blanco2>{
+    opacity: 0; /* Hacemos que el contenido esté inicialmente oculto */
+    transition: opacity 0.3s; /* Agregamos una transición de opacidad para que aparezca suavemente */
+  }
+  
+  .blanco2{
+    opacity: 1; /* Hacemos que el contenido aparezca cuando el elemento tiene la clase animated-slide */
+  }
+  
+
 }
 .col-xxl-6 {
   /* Establecemos la altura de las secciones para que sean iguales */
