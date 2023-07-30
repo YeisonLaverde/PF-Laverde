@@ -4,6 +4,10 @@
 .main {
   @include grid-style;
 }
+ul {
+  @include list-reset;
+}
+
 
 .item {
   @include item-style;

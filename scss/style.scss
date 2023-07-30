@@ -19,10 +19,6 @@ $theme-colors: (
       }
   }
 
-  // Estilos para el botón animado
-  .animated-button {
-    animation: bounce 1s infinite; /* Aplicar la animación de rebote definida en keyframes */
-  }
  @import "../node_modules/bootstrap/scss/bootstrap";
  @import "./components/header";
  @import "./components/main";

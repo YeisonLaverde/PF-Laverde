@@ -18,10 +18,6 @@
     transform: translateY(-15px);
   }
 }
-.animated-button {
-  animation: bounce 1s infinite; /* Aplicar la animación de rebote definida en keyframes */
-}
-
 /*!
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11379,6 +11375,15 @@ textarea.form-control-lg {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin-bottom: 20px;
 }
 
 .item {
