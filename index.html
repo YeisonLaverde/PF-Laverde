@@ -22,47 +22,38 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <script>
-    const edad =  prompt('ingrese su edad')
-    const condition = parseInt (edad) > 13
-  
-    if (condition) {
-      alert('que disfrute la pelicula')
-    } else {
-    alert ('disculpas, no puede ingresar')
-    }
-  </script>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-danger bg border border-primary-subtle">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/image/Logo.webp" alt="Logo" style="width: 80px; height: auto;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/about.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/us.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header class="container-fluid">
+    <section class="row h-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-danger border border-primary-subtle">
+          <a class="navbar-brand" href="./index.html">
+             <img src="./assets/image/Logo.webp" alt="logo" style="width: 80px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/about.html">Acerca de</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/services.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/pages/us.html">Nosotros</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </section>
+</header>
+
     
 <!--Bootstrap + Flexbox + Grid  -->
     <main class="container-fluid">
@@ -70,9 +61,9 @@
             <section class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 textheight">
               <div>
                 <div class="imageabsolut">
-                  <img src="./assets/image/Topographic 6.svg" alt="lo sentimos no carga la imagen">
+                  <img src="./assets/image/Topographic.webp" alt="lo sentimos no carga la imagen">
                 </div class="container-center">
-                <h1 class="textheight">Explora los Andes Colombianos<img class="imagesmall" src="./assets/image/NIEVE Montaña Nevada Farellones 01 - skifarellones.png" alt="Montañas cubiertas de nieve">Aventura única<img class="imagesmall" src="./assets/image/66e83adb-2c0d-4368-956b-dfaca0a8c363.jpeg" alt="Pájaro exótico volando">Fauna brillante en el cielo<img class="imagesmall" src="./assets/image/9 Things to Know Before You Go to the Amazon Rainforest.jpeg" alt="Cascada impresionante"></h1>
+                <h1 class="textheight">Explora los Andes Colombianos<img class="imagesmall" src="./assets/image/nieve mntaña.webp" alt="Montañas cubiertas de nieve">Aventura única<img class="imagesmall" src="./assets/image/condor.webp" alt="Pájaro exótico volando">Fauna brillante en el cielo<img class="imagesmall" src="./assets/image/cascada.webp" alt="Cascada impresionante"></h1>
               </div>
                 <!--contenido de mi pagina-->
             </section>
