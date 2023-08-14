@@ -60,6 +60,7 @@
     transition: transform 0.3s ease;
     border-image: $border-gradient 1;
     border-image-slice: 1;
+    padding: 20px;
   
     &:hover {
       transform: translateY(-5px);
@@ -79,7 +80,8 @@
       margin-bottom: 15px;
     }
   }
-  
+
+
   // Mixin para estilos del grid
   @mixin grid-style {
     display: grid;

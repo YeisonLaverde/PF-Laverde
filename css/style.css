@@ -11390,6 +11390,13 @@ textarea.form-control-lg {
   padding: 20px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -11403,6 +11410,7 @@ ul {
   transition: transform 0.3s ease;
   border-image: linear-gradient(to right, #007bff, #00bcd4) 1;
   border-image-slice: 1;
+  padding: 20px;
 }
 .item:hover {
   transform: translateY(-5px);
