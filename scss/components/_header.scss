@@ -76,26 +76,29 @@
   text-align: center;
   @include text-style($color-primary, $font-size-3rem);
   font-weight: $font-weight-900;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .blancoedit {
   width: 100vw;
   height: 80vh;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  text-align: center; /* Alinea el texto al centro */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   @include text-style($color-primary, $font-size-default);
   font-weight: $font-weight-900;
-}
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 768px) {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
   }
 }
 

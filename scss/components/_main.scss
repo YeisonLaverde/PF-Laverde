@@ -1,11 +1,8 @@
 @import "../base/variables.scss";
 @import "../base/mixins";
 
-.main {
-  @include grid-style;
-}
-
 .grid {
+  @include grid-style;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;

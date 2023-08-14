@@ -11349,28 +11349,33 @@ textarea.form-control-lg {
   font-family: Arial, sans-serif;
   font-weight: 900;
 }
+@media (max-width: 768px) {
+  .blanco {
+    font-size: 20px;
+  }
+}
 
 .blancoedit {
   width: 100vw;
   height: 80vh;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  text-align: center; /* Alinea el texto al centro */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #000000;
   font-size: 4rem;
   font-family: Arial, sans-serif;
   font-weight: 900;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 768px) {
+  .blancoedit {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
   }
 }
 
@@ -11383,18 +11388,20 @@ textarea.form-control-lg {
   color: #000000;
 }
 
-.main {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
-}
-
-.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 ul {

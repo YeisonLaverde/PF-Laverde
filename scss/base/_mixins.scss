@@ -82,13 +82,16 @@
   }
 
 
-  // Mixin para estilos del grid
   @mixin grid-style {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
+}
   
   // Mixin para estilos del formulario
   @mixin form-style {
