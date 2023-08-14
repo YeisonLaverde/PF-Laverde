@@ -78,6 +78,17 @@
   font-weight: $font-weight-900;
 }
 
+.blancoedit {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center; /* Alinea el texto al centro */
+  @include text-style($color-primary, $font-size-default);
+  font-weight: $font-weight-900;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;

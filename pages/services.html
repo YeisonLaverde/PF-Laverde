@@ -23,9 +23,9 @@
     <!--bootstrap + Flexbox -->
     <header class="container-fluid">
         <section class="row h-100">
-            <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+            <nav class="navbar navbar-expand-lg navbar-light p-3 text-primary-emphasis bg-danger border border-primary-subtle">
                 <a class="navbar-brand" href="../index.html">
-                 <img src="../assets/image/Logo.webp" alt="logo" style="width: 80px; height: auto;">
+                 <img src="../assets/image/Lgo.svg" alt="logo" style="width: 150px; height: auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -55,39 +55,63 @@
     </header>
 
     <!--Flexbox-->
-    <main>
-        <section>
-            <div class="imageabsolut">
-              <img src="../assets/image/Topographic2.webp" alt="lo sentimos no carga la imagen">
+   <main class="container-fluid">
+      <div class="row h-100">
+          <section class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 textheight">
+            <div>
+              <div class="imageabsolut">
+                 <img src="../assets/image/Topographic2.webp" alt="lo sentimos no carga la imagen">
+              </div class="container-center">
+                 <h1 class="blanco blancoedit">Nuestros Servicios</h1>
             </div>
+             <!--contenido de mi pagina-->
+            </section>
+            <div class="container mt-5">
+              <button class="btn btn-primary animate-button">Presiona Aquí</button>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              // JavaScript para agregar la clase de animación al botón cuando se hace clic
+              $(document).ready(function() {
+                  $(".animate-button").click(function() {
+                    $(".col-xxl-6").toggleClass("animated-slide");
+                  });
+              });
+          </script>
+          <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 bg-success-subtle">
             <div class="container">
-                <h2 class="blanco">Nuestros Servicios</h2>
-                <p>Ofrecemos una amplia gama de servicios diseñados para satisfacer tus necesidades:</p>
-                <ul>
-                  <li>
+                <div class="row">
+                  <div class="col-md-12">
                     <h3 class="blanco2">Servicio de Guía de Montaña</h3>
                     <p>Nuestros experimentados guías te acompañarán en emocionantes expediciones a través de los Andes colombianos. Te llevarán a lugares impresionantes, te proporcionarán información sobre la flora y fauna local y garantizarán tu seguridad durante la aventura.</p>
-                    <img src="../assets/image/guiamontaña.webp" width="300" height="400" alt="Servicio de Guía de Montaña">
-                  </li>
-                  <li>
+                    <img src="../assets/image/guiamontaña.webp" alt="Bosque nublado"  width="300" height="400"  >
+                  </div>
+                  <div class="col-md-12">
                     <h3 class="blanco2" >Senderismo y Trekking</h3>
                     <p>Explora los senderos escénicos de los Andes colombianos con nuestras rutas de senderismo y trekking. Desde caminatas suaves hasta desafiantes ascensos, tenemos opciones para todos los niveles de experiencia. Descubre la belleza natural y disfruta de vistas panorámicas inolvidables.</p>
                     <img src="../assets/image/amazon.webp" width="300" height="400" alt="Senderismo y Trekking">
-                  </li>
-                  <li>
-                    <h3 class="blanco2" >Turismo Cultural</h3>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 bg-warning-subtle">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="blanco2">Turismo Cultural</h3>
                     <p>Sumérgete en la rica cultura de los Andes colombianos a través de nuestros tours culturales. Visita pueblos tradicionales, conoce a las comunidades indígenas locales, participa en rituales y descubre la artesanía y la gastronomía auténtica de la región.</p>
-                    <img src="../assets/image/turismo cultural.webp" width="300" height="400" alt="Turismo Cultural">
-                  </li>
-                  <li>
+                    <img src="../assets/image/turismo cultural.webp" alt="Turismo cultural"  width="300" height="400"  >
+                  </div>
+                  <div class="col-md-12">
                     <h3 class="blanco2" >Ecoturismo y Conservación</h3>
                     <p>Nos comprometemos con la conservación de los Andes colombianos. Únete a nuestros programas de ecoturismo y contribuye directamente a la protección de los ecosistemas locales. Participa en actividades de reforestación, avistamiento de aves y otras iniciativas sostenibles.</p>
                     <img src="../assets/image/ecoturismo.webp" width="300" height="400" alt="Ecoturismo y Conservación">
-                  </li>
-                </ul>
-            </div>
-        </section>
-
+                  </div>
+                </div>
+              </div>
+          </section>
+      </div>
+    </main>
 
     <!--Flexbox-->
     <footer>
